@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('mahalo');
+  this.route('surfboards')
+  this.route('beaches', {path: 'beaches/:beach_id'});
+  this.route('movie-review');
+  this.route('movies');
 });
 
 export default Router;
